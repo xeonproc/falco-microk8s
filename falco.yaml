@@ -11,6 +11,15 @@ spec:
     targetRevision: 4.1.1
     helm:
       releaseName: falco
+      parameters:
+        - name: driver.kind
+          value: "ebpf"
+        - name: tty
+          value: "true"
+        - name: falcosidekick.enabled
+          value: "true"
+       - name: falcosidekick.config.customfields
+          value: "user:lewie"
   destination:
     server: "https://kubernetes.default.svc"
     namespace: falco

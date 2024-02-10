@@ -18,7 +18,7 @@ spec:
           value: "true"
         - name: falcosidekick.enabled
           value: "true"
-       - name: falcosidekick.config.customfields
+        - name: falcosidekick.config.customfields
           value: "user:lewie"
   destination:
     server: "https://kubernetes.default.svc"

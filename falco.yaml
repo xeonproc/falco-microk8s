@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: falco
+  namespace: argocd
+spec:
+  project: default
+  source:
+    chart: falco
+    repoURL: https://falcosecurity.github.io/charts
+    targetRevision: 4.1.1
+    helm:
+      releaseName: falco
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: falco

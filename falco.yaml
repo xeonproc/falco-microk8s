@@ -23,3 +23,9 @@ spec:
   destination:
     server: "https://kubernetes.default.svc"
     namespace: falco
+  syncPolicy:
+    automated:
+      prune: true # Enables automatic pruning of resources
+      selfHeal: true # Enables auto-healing of resources
+    syncOptions:
+      - CreateNamespace=true # Allows Argo CD to create the namespace if it doesn't exist

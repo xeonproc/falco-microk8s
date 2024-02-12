@@ -25,7 +25,7 @@ spec:
         - name: falcosidekick.config.syslog.port
           value: "514"
         - name: falcosidekick.config.syslog.protocol
-          value: "tcp" # or "udp"
+          value: "udp" # or "udp"
   destination:
     server: "https://kubernetes.default.svc"
     namespace: falco

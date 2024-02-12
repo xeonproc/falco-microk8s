@@ -26,6 +26,8 @@ spec:
           value: "514"
         - name: falcosidekick.config.syslog.protocol
           value: "udp" # or "udp"
+        - name: falcosidekick.config.syslog.minimumpriority
+          value: "debug"
   destination:
     server: "https://kubernetes.default.svc"
     namespace: falco

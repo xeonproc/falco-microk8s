@@ -26,8 +26,8 @@ spec:
           value: "514"
         - name: falcosidekick.config.syslog.protocol
           value: "tcp" # or "udp"
-        - name: falcosidekick.config.customfields
-          value: "user:lewie"
+        - name: falcosidekick.webui.user
+          value: "lewie:password"
   destination:
     server: "https://kubernetes.default.svc"
     namespace: falco

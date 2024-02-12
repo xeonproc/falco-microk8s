@@ -18,12 +18,6 @@ spec:
           value: "true"
         - name: falcosidekick.enabled
           value: "true"
-        - name: falcosidekick.config.syslog.host
-          value: "192.168.1.157"
-        - name: falcosidekick.config.syslog.port
-          value: "514"
-        - name: falcosidekick.config.syslog.protocol
-          value: "tcp" # or "udp"
         - name: falcosidekick.config.customfields
           value: "user:lewie"
   destination:
